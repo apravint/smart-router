@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-router"
+version = "0.1.0"
+description = "Intelligent LLM Complexity Scorer, Response Cache & Dynamic Model Router (RouteLLM + GPTCache)"
+readme = "README.md"
+authors = [{ name = "Ayyappa Pravin", email = "apravint@users.noreply.github.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+smart-router = "smart_router.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/apravint/smart-router"
+Issues = "https://github.com/apravint/smart-router/issues"
